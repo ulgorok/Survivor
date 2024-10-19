@@ -6,9 +6,17 @@ Vous noterez qu'en dehors de cette page, le contenu de la documentation est réd
 
 Vous pourrez utiliser ce projet comme référence pendant votre cursus, et il restera à votre disposition après votre parcours. S'il devait manquer des informations, vous pouvez me contacter par e-mail à [formations@hubertg.fr](mailto:formations@hubertg.fr).
 
+---
+
+💡 Le contenu des "chapîtres" ainsi que les guides se trouvent dans le dossier [`/Documentation`](./Documentation), que vous pouvez consulter directement depuis *GitLab* sans nécéssairement récupérer le projet sur votre machine.
+
+---
+
 ## Récupérer le projet
 
 Pour récupérer le projet sur votre machine, vous pouvez directement le télécharger sous forme d'archive `.zip` depuis GitLab, ou le cloner via [Git](https://git-scm.com) si vous souhaitez récupérer ses différentes mises à jour au fil de l'année.
+
+[=> Voir aussi le guide complet sur l'utilisation de *Git*](./Documentation/git.md)
 
 ### Cloner le projet via [Git](https://git-scm.com)
 
