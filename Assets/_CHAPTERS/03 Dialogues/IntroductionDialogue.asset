@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1ed3b84a5758884083bd5fc8102b10b, type: 3}
+  m_Name: IntroductionDialogue
+  m_EditorClassIdentifier: 
+  dialogues:
+  - 'Hi there!
+
+    (Press Space to continue...)'
+  - We created this Dialogue Asset from Assets > Create > Dialogue Asset.
+  - This is possible because we have created a script "DialogueAsset.cs", which uses
+    a [CreateAssetMenu] attribute.
+  - Scriptable Objects (like Dialogue Asset) are only meant to store data. So they
+    can't be placed in the sene.
+  - To display the text, we ceated a "Dialogue Player" component, that reads the
+    content of our Dialogue Asset.
+  - And here we are!
+  - 'This box will close by itself the next time you press the input.
+
+    Bye now!'
