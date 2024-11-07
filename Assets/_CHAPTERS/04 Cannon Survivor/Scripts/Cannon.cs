@@ -62,6 +62,8 @@ public class Cannon : MonoBehaviour
     /// </summary>
     private void Fire()
     {
+        Projectile projectileInstantiate = Instantiate(weapon.projectilePrefab, cannonProjectileOrigin.position, Quaternion.identity);
+        projectileInstantiate.Launch(weapon.damages, weapon.speed, cannonRenderer.transform.up, range);
         /**
          *  @todo
          *  - Instantiate the projectile prefab of the active weapon

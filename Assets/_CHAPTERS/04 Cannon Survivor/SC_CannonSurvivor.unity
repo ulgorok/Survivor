@@ -268,7 +268,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1141478987}
-  - component: {fileID: 1141478986}
+  - component: {fileID: 1141478988}
   m_Layer: 0
   m_Name: Enemies Spawner
   m_TagString: Untagged
@@ -276,7 +276,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1141478986
+--- !u!4 &1141478987
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1141478985}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0.23}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1141478988
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -289,26 +304,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targetPlayer: {fileID: 7628141533803972609}
-  enemyPrefabs: []
-  distance: 16.5
-  minSpawnInterval: 1
-  maxSpawnInterval: 5
+  enemyPrefabs:
+  - {fileID: 8495614701377836721, guid: 54e58f570f2756d428166cad1dd00909, type: 3}
+  distance: 17
+  minSpawnInterval: 0.6
+  maxSpawnInterval: 2
   spawnIntervalReductionDuration: 60
---- !u!4 &1141478987
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1141478985}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1275543599829184919
 GameObject:
   m_ObjectHideFlags: 0
@@ -524,8 +525,8 @@ GameObject:
   - component: {fileID: 7628141533803972609}
   - component: {fileID: 4761114062590648637}
   - component: {fileID: 7897145248900862724}
-  - component: {fileID: 5940005305457816470}
   - component: {fileID: 8005329036900744121}
+  - component: {fileID: 8005329036900744122}
   m_Layer: 6
   m_Name: Cannon
   m_TagString: Untagged
@@ -533,24 +534,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &5940005305457816470
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5128618357478788388}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 79b136ea4c4605749acdc72c8162b8c5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cannonRenderer: {fileID: 3702549086230781855}
-  cannonProjectileOrigin: {fileID: 3440872289088240297}
-  weapon: {fileID: 11400000, guid: ee9e436392a11424f8965a69f7a2778c, type: 2}
-  fireRateMultiplier: 3
-  damagesMultiplier: 1
-  range: 7
 --- !u!4 &7386976743530789722
 Transform:
   m_ObjectHideFlags: 0
@@ -639,6 +622,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &8005329036900744122
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5128618357478788388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59af3f27e95e53c4199c6e0e78b9f546, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cannonRenderer: {fileID: 3702549086230781855}
+  cannonProjectileOrigin: {fileID: 3440872289088240297}
+  weapon: {fileID: 11400000, guid: 53e5b104ea24ff94da47dd8c6982bf2c, type: 2}
+  fireRateMultiplier: 3
+  damagesMultiplier: 1
+  range: 6
 --- !u!1 &8939516141062765213
 GameObject:
   m_ObjectHideFlags: 0
