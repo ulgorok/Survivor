@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8cb8c84215d97b4690bea2993378be8, type: 3}
+  m_Name: Weapon_Missile_FINAL
+  m_EditorClassIdentifier: 
+  fireRate: 0.8
+  damages: 4
+  speed: 6
+  projectilePrefab: {fileID: 3135402796456231617, guid: 03e5e8964f03ee243a86a8472b6b64f4,
+    type: 3}

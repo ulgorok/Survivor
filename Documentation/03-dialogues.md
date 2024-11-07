@@ -68,4 +68,4 @@ Here are the scripts created in this chapter, documented using comments.
 
 ---
 
-[<= Back to summary](README.md)
+[<= Back to summary](README.md) | [=> Next chapter](./04-cannon-survivor.md)
